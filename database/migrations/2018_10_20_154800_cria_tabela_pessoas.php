@@ -17,15 +17,15 @@ class CriaTabelaPessoas extends Migration
             $table->string('ieRg',25);
             $table->string('cep',8);
             $table->string('endereco');
-            $table->string('enderecoNumero',25);
+            $table->integer('enderecoNumero');
             $table->string('enderecoComplemento');
             $table->string('enderecoBairro');
             $table->string('enderecoCidade');
             $table->string('enderecoCodCidade',9);
             $table->char('enderecoEstado',2);
-            $table->string('enderecoCodEstado',2);
+            $table->integer('enderecoCodEstado');
             $table->string('enderecoPais');
-            $table->string('enderecoCodPais',4);
+            $table->integer('enderecoCodPais');
             $table->string('emailPrincipal');
             $table->timestamps();
         });
